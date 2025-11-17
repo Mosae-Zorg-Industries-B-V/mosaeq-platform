@@ -1,1 +1,9 @@
-
+{
+  "name": "Human Adult (70kg)",
+  "species": "human", 
+  "body_weight_kg": 70,
+  "cardiac_output_l_hr": 300,
+  "volumes_l": {
+    "arterial_blood": 1.5,
+    "venous_blood": 4.5,
+# ... (rest of the JSON from my file)
