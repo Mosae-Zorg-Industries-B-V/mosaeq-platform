@@ -1,1 +1,29 @@
+openapi: 3.0.0
+info:
+  title: MosaeQ Quantum Platform API
+  description: Quantum-accelerated preclinical analysis
+  version: 1.0.0
+  contact:
+    email: support@mosaeq.com
+    
+servers:
+  - url: https://api.mosaeq.com/v1
+    description: Production server
 
+paths:
+  /rna/analyze:
+    post:
+      summary: Quantum RNA Analysis
+      description: Analyze RNA sequence with quantum acceleration
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                sequence:
+                  type: string
+                  description: RNA sequence (A, U, G, C)
+                  example: "AUGUCUAACAAUUCGAGAGAAC"
+# ... (rest of the YAML content from my file)
