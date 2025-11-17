@@ -1,0 +1,158 @@
+# MosaeQ Platform - .gitignore
+
+# Sensitive files - NEVER commit these
+.env
+.env.local
+.env.production
+*.key
+*.pem
+config/secrets.json
+api-keys/
+credentials/
+
+# User data - Should be in user's own repositories  
+user-data/
+analysis-results/
+compound-libraries/
+custom-parameters/
+
+# Quantum core - Proprietary algorithms
+quantum-core/
+src/quantum/
+lib/quantum-algorithms/
+*.quantum
+
+# API secrets and tokens
+github-tokens/
+oauth-secrets/
+stripe-keys/
+supabase-secrets/
+
+# Dependencies
+node_modules/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.Python
+
+# Build outputs
+dist/
+build/
+*.whl
+*.tar.gz
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage and testing
+coverage/
+.coverage
+.pytest_cache/
+.tox/
+htmlcov/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Documentation builds (keep source, ignore builds)
+docs/_build/
+site/
+
+# Package files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# OS generated files
+.DS_Store?
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Large data files (use Git LFS instead)
+*.h5
+*.hdf5
+*.mat
+*.npz
+data/large-datasets/
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# External API documentation that changes frequently
+external-apis/live/
+cached-responses/
+
+# Commercial software configs (users provide their own)
+lhasa-config/
+simulations-plus/
+schrodinger-suite/
+
+# Performance profiling
+*.prof
+*.profile
+
+# Quantum circuit cache
+.qiskit/
+circuit-cache/
+quantum-results-cache/
+
+# NEVER commit user's proprietary data
+proprietary-compounds/
+internal-research/
+confidential-parameters/
+client-data/
+
+# Development and testing only
+dev-tools/
+test-data/real-compounds/
+sandbox/
+
+# Auto-generated documentation
+api-docs/generated/
+openapi/build/
